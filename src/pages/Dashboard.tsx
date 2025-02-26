@@ -24,12 +24,12 @@ export const Dashboard: React.FC = () => {
   });
 
   const [waBotFormData, setWaBotFormData] = useState<WaBotData>({
-    name: 'Script Kamiya',
-    description: 'Backup-an Sc Kamiya Old Version',
-    creator: 'Al De Lloyd Frontera',
-    imageUrl: 'https://telegra.ph/file/d5c107a130610e5e8ce86.jpg',
+    name: '',
+    description: '',
+    creator: '',
+    imageUrl: '',
     buttonType: 'download',
-    buttonUrl: 'https://www.mediafire.com/file/sw2p11kcesa9jzl/BackupKamiya.tar.gz/file',
+    buttonUrl: '',
   });
 
   const handleScraperSubmit = async (e: React.FormEvent) => {
@@ -40,7 +40,7 @@ export const Dashboard: React.FC = () => {
       const success = await addScraper(scraperFormData);
       
       if (success) {
-        toast.success('Scraper added successfully!');
+        toast.success('Code added successfully!');
         setScraperFormData({
           title: '',
           description: '',
@@ -49,7 +49,7 @@ export const Dashboard: React.FC = () => {
           creatorUrl: '',
         });
       } else {
-        toast.error('Failed to add scraper');
+        toast.error('Failed to add Code');
       }
     } catch (error) {
       toast.error('An error occurred');
