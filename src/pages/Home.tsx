@@ -44,7 +44,7 @@ export const Home: React.FC = () => {
           
           <div className="relative">
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 bg-clip-text text-transparent bg-gradient-to-r from-[#5865F2] to-[#7289DA]">
-              SCode
+              NebulaCode
             </h1>
             <Star className="absolute -top-4 -right-4 text-yellow-400 animate-pulse hidden md:block" size={24} />
           </div>
@@ -151,7 +151,7 @@ export const Home: React.FC = () => {
                 alt="SCode Logo"
                 className="w-8 h-8"
               />
-              <span className="text-xl font-semibold">SCode</span>
+              <span className="text-xl font-semibold">NebulaCode</span>
             </div>
             <div className="flex items-center gap-6">
               <a
