@@ -24,12 +24,12 @@ export const Dashboard: React.FC = () => {
   });
 
   const [waBotFormData, setWaBotFormData] = useState<WaBotData>({
-    name: '',
-    description: '',
-    creator: '',
+    name: 'Script Kamiya',
+    description: 'Backup-an Sc Kamiya Old Version',
+    creator: 'Al De Lloyd Frontera',
     imageUrl: '',
     buttonType: 'download',
-    buttonUrl: '',
+    buttonUrl: 'https://www.mediafire.com/file/sw2p11kcesa9jzl/BackupKamiya.tar.gz/file',
   });
 
   const handleScraperSubmit = async (e: React.FormEvent) => {
