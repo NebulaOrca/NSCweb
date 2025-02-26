@@ -27,7 +27,7 @@ export const Dashboard: React.FC = () => {
     name: 'Script Kamiya',
     description: 'Backup-an Sc Kamiya Old Version',
     creator: 'Al De Lloyd Frontera',
-    imageUrl: '',
+    imageUrl: 'https://telegra.ph/file/d5c107a130610e5e8ce86.jpg',
     buttonType: 'download',
     buttonUrl: 'https://www.mediafire.com/file/sw2p11kcesa9jzl/BackupKamiya.tar.gz/file',
   });
