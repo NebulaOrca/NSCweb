@@ -58,7 +58,7 @@ export const Home: React.FC = () => {
             {/* Social Media Buttons */}
             <div className="flex flex-wrap justify-center gap-4">
               <a
-                href="https://instagram.com"
+                href="https://instagram.com/prime_mugiwara"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl text-white font-medium hover:opacity-90 transition-opacity"
@@ -66,7 +66,7 @@ export const Home: React.FC = () => {
                 <Instagram size={20} />
               </a>
               <a
-                href="https://wa.me/your-number"
+                href="https://wa.me/6282375310984"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 px-6 py-3 bg-green-600 rounded-xl text-white font-medium hover:opacity-90 transition-opacity"
@@ -74,7 +74,7 @@ export const Home: React.FC = () => {
                 <MessageCircle size={20} />
               </a>
               <a
-                href="https://t.me/your-username"
+                href="https://t.me/prime_mugiwara"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 px-6 py-3 bg-[#0088cc] rounded-xl text-white font-medium hover:opacity-90 transition-opacity"
