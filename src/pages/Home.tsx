@@ -127,12 +127,12 @@ export const Home: React.FC = () => {
       <div className="bg-[#2F3136]/50 py-16">
         <div className="container mx-auto px-4">
           <h2 className="text-2xl md:text-3xl font-bold text-white text-center mb-12">
-            {activeContent === 'scraper' ? 'Featured Scrapers' : 'Featured WhatsApp Bots'}
+            {activeContent === 'Code' ? 'Featured Code' : 'Featured Script'}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {activeContent === 'scraper'
+            {activeContent === 'Code'
               ? (loadingScrapers ? renderLoadingCards() : scrapers.map((scraper, index) => (
-                  <ScraperCard key={index} scraper={scraper} />
+                  <ScraperCard key={index} Code={Code} />
                 )))
               : (loadingBots ? renderLoadingCards() : waBots.map((bot, index) => (
                   <WaBotCard key={index} bot={bot} />
