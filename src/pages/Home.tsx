@@ -88,7 +88,7 @@ export const Home: React.FC = () => {
             onClick={() => navigate('/login')}
             className="bg-[#5865F2] hover:bg-[#4752C4] text-white px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
           >
-            CF-Team
+            Nebula-Team
           </button>
         </div>
       </div>
@@ -98,26 +98,26 @@ export const Home: React.FC = () => {
         <div className="container mx-auto">
           <div className="grid grid-cols-2 w-full">
             <button
-              onClick={() => setActiveContent('scraper')}
+              onClick={() => setActiveContent('Code')}
               className={`flex items-center justify-center gap-2 px-4 py-4 font-semibold transition-colors ${
-                activeContent === 'scraper'
+                activeContent === 'Code'
                   ? 'text-[#5865F2] border-b-2 border-[#5865F2] bg-[#36393F]'
                   : 'text-gray-400 hover:text-gray-300'
               }`}
             >
               <Code2 size={20} />
-              <span>Scrapers</span>
+              <span>Code</span>
             </button>
             <button
-              onClick={() => setActiveContent('wabot')}
+              onClick={() => setActiveContent('Script')}
               className={`flex items-center justify-center gap-2 px-4 py-4 font-semibold transition-colors ${
-                activeContent === 'wabot'
+                activeContent === 'Script'
                   ? 'text-[#5865F2] border-b-2 border-[#5865F2] bg-[#36393F]'
                   : 'text-gray-400 hover:text-gray-300'
               }`}
             >
               <Bot size={20} />
-              <span>WA Bots</span>
+              <span>Script</span>
             </button>
           </div>
         </div>
@@ -155,13 +155,13 @@ export const Home: React.FC = () => {
             </div>
             <div className="flex items-center gap-6">
               <a
-                href="https://github.com/YoshCasaster"
+                href="https://github.com/NebulaOrca"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors"
               >
                 <Github size={24} />
-                <span>YoshCasaster</span>
+                <span>NebulaOrca</span>
               </a>
             </div>
           </div>
