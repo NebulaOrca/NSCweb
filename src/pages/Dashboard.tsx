@@ -6,7 +6,7 @@ import { ScraperData, WaBotData } from '../types';
 import { useScrapers } from '../hooks/useScrapers';
 import { useWaBots } from '../hooks/useWaBots';
 
-type FormType = 'scraper' | 'wabot';
+type FormType = 'Code' | 'Script';
 
 export const Dashboard: React.FC = () => {
   const navigate = useNavigate();
@@ -135,41 +135,41 @@ export const Dashboard: React.FC = () => {
           {/* Form Type Selector */}
           <div className="grid grid-cols-2 gap-4 mb-8">
             <button
-              onClick={() => setActiveForm('scraper')}
+              onClick={() => setActiveForm('Code')}
               className={`flex items-center justify-center gap-2 px-6 py-4 rounded-xl font-semibold transition-all duration-300 ${
-                activeForm === 'scraper'
+                activeForm === 'Code'
                   ? 'bg-[#5865F2] text-white shadow-lg'
                   : 'bg-[#40444B] text-gray-300 hover:text-white hover:bg-[#36393F]'
               }`}
             >
               <Code2 size={20} />
-              <span className="hidden sm:inline">Add Scraper</span>
-              <span className="sm:hidden">Scraper</span>
+              <span className="hidden sm:inline">Add Code</span>
+              <span className="sm:hidden">Code</span>
             </button>
             <button
-              onClick={() => setActiveForm('wabot')}
+              onClick={() => setActiveForm('Script')}
               className={`flex items-center justify-center gap-2 px-6 py-4 rounded-xl font-semibold transition-all duration-300 ${
-                activeForm === 'wabot'
+                activeForm === 'Script'
                   ? 'bg-[#5865F2] text-white shadow-lg'
                   : 'bg-[#40444B] text-gray-300 hover:text-white hover:bg-[#36393F]'
               }`}
             >
               <Bot size={20} />
-              <span className="hidden sm:inline">Add WA Bot</span>
-              <span className="sm:hidden">WA Bot</span>
+              <span className="hidden sm:inline">Add Script</span>
+              <span className="sm:hidden">Script</span>
             </button>
           </div>
 
           {/* Form Section */}
           <div className="bg-[#2F3136] p-6 sm:p-8 rounded-xl border border-gray-700 shadow-xl">
             <div className="flex items-center gap-2 mb-6">
-              {activeForm === 'scraper' ? <Code2 size={24} /> : <Bot size={24} />}
+              {activeForm === 'Code' ? <Code2 size={24} /> : <Bot size={24} />}
               <h2 className="text-xl sm:text-2xl font-bold text-white">
-                {activeForm === 'scraper' ? 'Add New Scraper' : 'Add New WhatsApp Bot'}
+                {activeForm === 'Code' ? 'Add New Code' : 'Add New WhatsApp Bot'}
               </h2>
             </div>
 
-            {activeForm === 'scraper' ? (
+            {activeForm === 'Code' ? (
               <form onSubmit={handleScraperSubmit} className="space-y-6">
                 <div className="grid sm:grid-cols-2 gap-6">
                   <div>
@@ -233,12 +233,12 @@ export const Dashboard: React.FC = () => {
                   {isSubmitting ? (
                     <>
                       <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
-                      <span>Adding Scraper...</span>
+                      <span>Adding Code...</span>
                     </>
                   ) : (
                     <>
                       <Save size={20} />
-                      <span>Add Scraper</span>
+                      <span>Add Code</span>
                     </>
                   )}
                 </button>
